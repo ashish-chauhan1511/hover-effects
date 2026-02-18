@@ -1,0 +1,369 @@
+:root{
+--color: rgb(12, 11, 11);
+--colorhed: #4e4a4a;
+--bg-color:unset;
+}
+*{
+    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: unset;   
+}
+img{
+filter: grayscale(1);
+}
+.dark-them{
+    --bg-color: black;
+    background-color: black;
+    --colorhed:white;
+}
+.active{
+    & span{      
+    color: purple;
+    }
+}
+header{
+    z-index: 1;
+    position: relative;
+    top: 0;
+    position: sticky;
+    background-color: #333;
+    & .topnav {
+    & .prode{
+    padding-left: 20px !important;
+    }
+    & .icon{
+    display: none;
+    }
+    & .moon-icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: white;
+    padding: 12px 0px !important;
+    }
+    & a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    & .menu{
+    display: flex;
+    justify-content: center; 
+    }
+    }
+  }
+
+.main{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    padding: 3%;
+        & .main-child{
+        padding: 0px 12px; 
+        & .main-child-text{
+        & .cmpny-nam{
+        color:var(--colorhed) ;
+        font-size: 65px; 
+        & .cmpny-sh{
+        color: purple;
+        font-size: 75px;
+        }
+        }
+        & .cmpny-subheding{
+        color:var(--colorhed);
+        }
+        & .cmpny-discrpt{
+        color: grey;
+        line-height: 27px;
+        }
+        } 
+       & .btn{
+        margin-top: 12%;
+        & .get-btn{
+        text-decoration: none;
+        padding: 2%;
+        background-color: #50e6d6;
+        border-radius: 9px;
+        color: white;
+        margin-right: 15px;
+        box-shadow: inset 0px 0px 7px 0px;
+        }:hover{
+        box-shadow: 0px 0px 10px 2px #50e6d6;
+        background-color: white;
+        color: black;
+        }
+        }
+        }
+        & .main-img{
+        background-size: cover;
+        border-radius: 12px;
+        }
+    }
+
+    .choseus{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        padding: 3%;
+        & .choseus-discip{
+        & .choseus-text{
+        & h2{
+        color: var(--colorhed); 
+        } 
+        & p{
+        color: grey;    
+        }   
+        }    
+        & .choesus-hilite{ 
+        & .choeses-hilite-sect{
+        display: flex;
+        & .hilite-num{
+        height: 18px;
+        width: 18px;
+        border: 5px double rgb(38, 232, 239);
+        border-radius: 50%;
+        margin-top: 2px;
+        margin-right: 9px;
+        }
+        & .hilite-text{
+        & .hi-cre{
+        margin: 0;
+        color: var(--colorhed);
+        }
+        & .hi-txt{
+        color: grey;
+        margin-top: 6px;
+        }
+        }
+        }
+        }
+        }
+    }
+
+ .service{
+        background-color: aliceblue;
+        padding: 4% 4px;
+        & .service-hed{
+        text-align: center;
+        color: grey;
+        font-size: 22px;
+        }
+        & .service-sect{
+        padding: 2% 0%;
+        display: flex;
+        justify-content: center;
+            
+        .service-opt{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;       
+        & .service-opt-child{
+        width: 200px;
+        text-align: center;
+        background-color: #ead8f6;
+        border-radius: 7px;
+        margin: 0px 22px;
+        & .service-img{
+        width: 80px;
+        height: 80px;
+        margin: 10% 30%;
+        }
+        }
+        }
+        }
+    }
+    footer{
+        height: auto;
+        background-color: #8fa6c7;
+        padding: 3% 4% 0% 4%;
+            & .ub{
+            color: white;
+            font-family: system-ui;
+            font-size: 40px;
+            }
+            & .help{
+            color: white;
+            font-family: system-ui;
+            font-size: 20px;
+            }
+            & .ft-menu{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            & .company{
+            & ol{
+            padding: 0;
+            & li{
+            color: white;                   
+            list-style-type: none;
+            font-family: system-ui;
+            line-height: 40px;    
+            cursor: pointer;
+            &.hed{
+            font-size: 25px;
+            cursor: unset;
+            }
+            & .cont-icon{  
+            & svg{
+            position: relative;
+            top: 6px;
+            margin-right: 12px;
+            }
+            }         
+            }
+            }
+            }
+            }
+            & .social-media{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            margin: 4% 0%;
+            & .icon-media{
+            & ol{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            & li{
+            list-style-type: none;
+            margin-right: 10%;
+            & a{
+            padding: 5px;
+            display: block;
+            border-radius: 4px;
+            &:hover{                        
+            background-color: rgba(175, 167, 167, 0.644);
+            }
+            }
+            }
+            }
+            }
+            }
+            & .language{
+            & .lang-child{
+            display: flex;
+            justify-content: space-evenly;
+            & a{ 
+            color: white;
+            text-decoration: none;
+            font-family: system-ui;
+            
+            padding: 5px 5px 5px 28px;
+            display: block;
+            border-radius: 4px;
+            & .icon-svg{
+            position: relative;
+            & svg{
+            position: absolute;
+            top: 3px;
+            right: 10px;
+            }
+            }
+            &:hover{
+            background-color: #665d5d;
+            }
+            }
+            }
+            }
+            & .term{
+            display: flex;
+            font-size: 12px;
+            font-family: system-ui;
+            color: #d2c4c4;
+            & p{
+            width: 40%;
+            margin: 0;
+            }
+            & ol{
+            display: flex;
+            margin: 0;
+            list-style-type: none;
+            justify-content: end;
+            width: 60%;
+            & li{
+            padding-right: 3%;
+            }
+            }
+            }
+
+        }
+        @media (758px <= width <= 894px){
+           .main .main-child .main-child-text .cmpny-nam {
+            font-size: 50px;
+            }
+            .main .main-child .main-child-text .cmpny-nam .cmpny-sh {
+            color: purple;
+            font-size: 65px;
+            }
+        }
+       @media (770px <= width <= 817px){
+            .main {
+            padding: 0; 
+            }
+            .choseus {
+            padding:3% 0;
+             }
+        }
+        @media (width <= 770px){
+            .main {
+            display: block;
+            }
+            .choseus {
+            display: block;
+            }
+            .service .service-sect
+            .service-opt .service-opt-child {
+            width: 164px;
+            margin: 0px 7px;
+            padding: 0px 9px;
+            }
+            .service .service-sect .service-opt .service-opt-child {
+            width: 291px;
+            margin: 0px 0px 24px 3px;
+            padding: 3px 9px;
+            }  
+            .service .service-sect .service-opt {
+            display: block;
+            }
+            .service .service-sect {
+            padding: 0%;
+            }
+            footer .ft-menu {
+            display: block;
+            }
+            footer .social-media {
+            display: block;
+            }
+            header .menu  .menu-links{
+            display: none;
+            }
+            }
+
+        @media  (width <= 700px) {
+            header .topnav .menu a {display: none;}
+            .topnav a.icon {
+            float: right;
+            display: block;
+            }
+            header .menu.responsive{
+            display: block;
+            }
+            header .menu.responsive a{ 
+            display: block;
+            text-align: left;
+            color: rgb(227, 214, 214);
+            width: 100%; 
+            }
+            header .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+            }
+            .topnav a.icon{
+            position: absolute;
+            right: 4px;
+            color: white;
+            }
+  
+        }
